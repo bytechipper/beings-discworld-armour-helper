@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Being's Discworld Armour Helper</title><link rel="stylesheet" href="panel.css"></head>
+<body><main class="panel">
+<section class="section"><div class="section-header">Coverage & recommendations</div>
+<p id="coverage-status" class="hint" role="status" aria-live="polite">Type coverage in the MUD to analyse your worn equipment.</p>
+<label>Prioritise <select id="priority"><option value="balanced">Balanced protection</option><option value="sharp">Sharp protection</option><option value="pierce">Pierce protection</option><option value="blunt">Blunt protection</option><option value="light">Protection per pound</option></select></label>
+<div id="coverage-summary"></div><ul id="recommendations"></ul>
+<p class="hint">Suggestions use wiki ratings at 0% enchantment and documented layer limits. Check fit, strength, cost and availability in the item details.</p>
+</section>
+<div class="search-row"><input id="search" type="search" placeholder="Search armour…" aria-label="Search armour"><button id="clear-search" class="btn">Clear</button></div>
+<div class="filters"><label>Material <select id="material"><option value="">All</option></select></label><label>Body <select id="body"><option value="">All</option></select></label><label>Layer <select id="layer"><option value="">All</option></select></label></div>
+<section class="section"><div class="section-header">Armour library <span id="count" role="status"></span></div><p class="hint introduction">Select armour for all documented facts and full wiki details.</p><p id="empty" class="hint" hidden>No matching armour.</p><ul id="armours"></ul></section>
+<footer class="hint source-note">Discworld MUD Wiki backup · available offline</footer></main>
+<dialog id="armour-dialog" aria-labelledby="detail-title"><header class="dialog-header"><div><h1 id="detail-title"></h1><div id="detail-tags" class="tags"></div></div><button id="close-detail" class="btn close-btn" aria-label="Close armour details">×</button></header><div id="detail-content" class="dialog-content"></div></dialog>
+<script src="armours.js"></script><script src="recommend.js"></script><script src="panel.js"></script></body></html>

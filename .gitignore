@@ -1,0 +1,8 @@
+dist/
+*.mallardx
+__pycache__/
+*.pyc
+.agents/
+.aws/
+.codex/
+DESC
